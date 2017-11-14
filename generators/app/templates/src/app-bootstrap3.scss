@@ -1,0 +1,93 @@
+// There are many good reasons to split your stylesheet into small modules. Modules make it easier for multiple
+// developers to work on a project. They increase readability within files. They also provide a logical "home" for
+// related styles.
+
+// Arrange your stylesheets in a manifest, in the order least-specific to most-specific.
+// Inverted Triangle CSS <https://speakerdeck.com/dafed/managing-css-projects-with-itcss> provides a good guideline
+// for organizing your stylesheets.
+
+// You should title your manifest global
+
+/*================================================================================
+[Layer 1 - Core variables and mixins]
+*/
+@import "lib/bootstrap/variables";
+@import "lib/bootstrap/mixins";
+
+// Add any custom mixins you create here
+@import "core/_variables";
+@import "core/_mixins";
+@import "core/_fonts";
+@import "core/_icons";
+
+/*================================================================================
+[Layer 2 - Reset and dependencies]
+*/
+@import "lib/bootstrap/normalize";
+@import "lib/bootstrap/print";
+@import "lib/bootstrap/glyphicons";
+
+// Add your fonts, icon sets, and any other global dependencies here
+
+/*================================================================================
+[Layer 3 - Core CSS]
+*/
+@import "lib/bootstrap/scaffolding";
+@import "lib/bootstrap/type";
+@import "lib/bootstrap/code";
+@import "lib/bootstrap/grid";
+@import "lib/bootstrap/tables";
+@import "lib/bootstrap/forms";
+@import "lib/bootstrap/buttons";
+
+/*================================================================================
+[Layer 4 - Components]
+*/
+// Comment out any Bootstrap modules you aren't using, or better yet
+// comment them all out and enable them as needed.
+
+//@import "lib/bootstrap/component-animations";
+//@import "lib/bootstrap/dropdowns";
+//@import "lib/bootstrap/button-groups";
+//@import "lib/bootstrap/input-groups";
+//@import "lib/bootstrap/navs";
+//@import "lib/bootstrap/navbar";
+//@import "lib/bootstrap/breadcrumbs";
+//@import "lib/bootstrap/pagination";
+//@import "lib/bootstrap/pager";
+//@import "lib/bootstrap/labels";
+//@import "lib/bootstrap/badges";
+//@import "lib/bootstrap/jumbotron";
+//@import "lib/bootstrap/thumbnails";
+//@import "lib/bootstrap/alerts";
+//@import "lib/bootstrap/progress-bars";
+//@import "lib/bootstrap/media";
+//@import "lib/bootstrap/list-group";
+//@import "lib/bootstrap/panels";
+//@import "lib/bootstrap/responsive-embed";
+//@import "lib/bootstrap/wells";
+//@import "lib/bootstrap/close";
+
+// Components w/ JavaScript
+//@import "lib/bootstrap/modals";
+//@import "lib/bootstrap/tooltip";
+//@import "lib/bootstrap/popovers";
+//@import "lib/bootstrap/carousel";
+
+// Add your own modules here
+
+/*================================================================================
+[Layer 5 - Views]
+*/
+
+// Add your view-specific stylesheets here. Before you add anything to these sheets as a one-off,
+// ask yourself if it can be turned into a module or a variant of a module.
+
+/*================================================================================
+[Layer 6 - Utility classes]
+*/
+@import "lib/bootstrap/utilities";
+@import "lib/bootstrap/responsive-utilities";
+
+// Add your own utilities here
+@import "utils/_utilities";

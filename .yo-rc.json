@@ -1,0 +1,9 @@
+{
+  "generator-node": {
+    "promptValues": {
+      "authorName": "Dave Rodriguez",
+      "authorEmail": "dave.rodriguez@hansoninc.com",
+      "authorUrl": "https://github.com/daverodriguez"
+    }
+  }
+}
