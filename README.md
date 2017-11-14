@@ -1,5 +1,5 @@
 # generator-hancss [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
-> A Yeoman generator for the [Hanson Inc CSS standard](https://github.com/hansoninc/hanson-css-standards).
+> A Yeoman generator for the [Hanson CSS standards](https://github.com/hansoninc/hanson-css-standards).
 
 ## Installation
 
